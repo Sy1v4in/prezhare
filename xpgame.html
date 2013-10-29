@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+
+  <title>XP Game</title>
+
+  <meta name="description" content="XP Game">
+
+  <link rel="stylesheet" href="./css/reveal.min.css">
+  <link rel="stylesheet" href="./css/theme/xpgame.css">
+
+  <style type="text/css">
+    .appear {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      margin-top: -1em;
+      width: 100%;
+    }
+
+    .slack {
+      font-size: 6em !important;
+    }
+
+    .img li {
+      float: left;
+      width: 50%;
+    }
+      
+      
+table.timer
+{
+	border-right: darkorchid thin solid;
+	border-top: darkorchid thin solid;
+	border-left: darkorchid thin solid;
+	border-bottom: darkorchid thin solid;
+}
+
+table.timer tr
+{
+	/*background-color: blue;*/
+}
+
+table.timer tr td.filled
+{
+	background-color: blue;
+}
+
+table.timer tr td.done
+{
+	background-color: red;
+}
+
+table.timer tr td.empty
+{
+}
+
+ul 
+{
+	margin-top : 0em ;
+	margin-bottom : 0.5em ;
+}
+
+table th
+{
+	background-color: #ffff33;
+	text-align: center;
+}
+
+table.score input 
+{
+	color: darkorchid;
+}
+      
+  </style>
+
+  <!--[if lt IE 9]>
+  <script src="/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            
+            <section>
+                <p>Bienvenue pour le</p>
+                <h1>XP <span class="hlt">Game</span></h1>
+            </section>
+            
+            
+            <section>
+                <ul>
+                    <p>Merci</p>
+                    <li style="list-style-type: none">
+                        <img style="vertical-align:middle" src="./img/Pascal_Van_Cauwenberghe.jpg" alt="Pascal Van Cauwenberghe" class="stamp">Pascal Van Cauwenberghe / <span class="hlt">NAYIMA</span>
+                    </li>
+                    <li style="list-style-type: none">
+                        <img style="vertical-align:middle" src="./img/Vera_Peeters.jpg" alt="Vera Peeters" class="stamp">Vera Peeters / <span class="hlt">TRYX</span>
+                    </li>
+                </ul>
+            </section>        
+        
+            
+            <section>
+                <p class="breadcrumb">e<span class="hlt">X</span>trem <span class="hlt">P</span>rogramming / wikipédia</p>
+                Tout en mettant l'accent sur les bonnes pratiques de programmation, XP préconise un déroulement par <span class="hlt">itérations courtes</span> et gérées <span class="hlt">collectivement</span>, avec une implication constante du <span class="hlt">client</span>.
+            </section>
+            
+            
+            <section>
+                
+                <section class="bgi" data-background="./img/objectif-526.jpg" data-transition="linear" data-background-transition="slide">
+                    <h2><span class="lettrine">O</span>bjectifs</h2>
+                </section>
+                
+                <section>
+                    <h2>Simuler le <span class="hlt">Planning Game</span></h2>
+                    <ul>
+                        <li>Estimer les user stories</li>
+                        <li>Planifier les itérations</li>
+                        <li>Réaliser les implémentations</li>
+                        <li>Obtenir du feedback</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2>Mesurer et utiliser la <span class="hlt">Vélocité</span></h2>
+                </section>
+                
+                <section>
+                    <h2>Comprendre les rôle de <span class="hlt">client</span> et de <span class="hlt">développeur</span></h2>
+                </section>
+                
+                <section>
+                    <h2>Pas d'inquiétude</h2>
+                    <p>L'implémentation n'est pas difficile ;-)</p>
+                </section>
+                
+            </section>
+
+            
+            <section>
+                
+                <section class="bgi" data-background="./img/Buddhabrot_max_500k_iterations.png" data-transition="linear" data-background-transition="slide">
+                    <h2><span class="lettrine">I</span>térations</h2>
+                </section>
+                
+                <section>
+                    <h2>Le <span class="hlt">client</span> écrit les stories</h2>
+                </section>
+                
+                <section>
+                    <h2>Les <span class="hlt">développeurs</span> estiment les stories</h2>
+                </section>
+                
+                <section>
+                    <h2>Le <span class="hlt">client</span> planifie l'<span class="hlt">itération</span></h2>
+                </section>
+                
+                <section>
+                    <h2>Pour chaque story </h2>
+                    <ul>
+                        <li>Les <span class="hlt">développeurs</span> implémentent la story</li>
+                        <li>Le <span class="hlt">client</span> effectue les tests d'acceptation</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2>Débriefing et <span class="hlt">rétrospective</span></h2>
+                </section>
+            
+            </section>
+
+
+            <section>
+                
+                <section class="bgi" data-background="./img/ill/banana.jpg" data-transition="linear" data-background-transition="slide">
+                    <h2><span class="lettrine">L</span>e <span class="lettrine">J</span>eu</h2>
+                </section>
+                
+                <section>
+                    <h2>Se joue en équipe</h2>
+                    <p><span class="hlt">Tous</span> Développeurs & Clients</p>
+                    <p><span class="hlt">Tous</span> Responsables</p>
+                </section>
+                
+                <section>
+                    <h2>Gagnez de la <span class="hlt">Valeur Métier</span> en implémentant des stories</h2>
+                </section>
+                
+                <section>
+                    <h2>L'équipe ayant la plus grande valeur métier <span class="hlt">gagne</span></h2>
+                </section>
+            
+            </section>
+
+            
+            <section>
+                
+                <section class="bgi" data-background="./img/ill/toolbox.jpg" data-transition="linear" data-background-transition="slide">
+                    <h2><span class="lettrine">L</span>es <span class="lettrine">M</span>oyens</h2>
+                </section>
+                
+                <section>
+                    <h2>Des <span class="hlt">User Stories</span> sur des cartes</h2>
+                </section>
+                
+                <section>
+                    <p>Chaque story vaut une certaine valeur métier</p>
+                    <p><span class="hlt">comptabilisée</span></p>
+                    <p>uniquement si la story est complètement implémentée </p>
+                </section>
+                
+                <section>
+                    <h2><span class="hlt">Time Boxing</span></h2> comme dans la vrai vie ;-)
+                </section>
+            
+            </section>
+            
+            
+            <section>
+                
+                <section class="bgi" data-background="./img/ill/estimation_immobilier.jpg" data-transition="linear" data-background-transition="slide">
+                    <h2><span class="lettrine">L</span>es <span class="lettrine">D</span>éveloppeurs <span class="lettrine">E</span>stiment</h2>
+                    <p>à la table de jeu</p>
+                </section>
+                
+                <section>
+                    <p>Triez toutes les stories</p>
+                    <p>combien de temps pour l'implémentation ? </p>
+                </section>
+                
+                <section>
+                    <h2>Assignez des <span class="hlt">points</span> aux stories</h2>
+                    <p>(facile)1..2..3..4..5..6(difficile) impossible</p>
+                </section>
+                
+                <section>
+                    <h2>Estimez les autres stories par <span class="hlt">comparaison</span> avec les stories précédentes</h2>
+                </section>
+                
+                <section>
+                    <h2>Client sur <span class="hlt">site</span></h2>
+                    <p>Posez des questions sur les stories</p>
+                </section>
+                
+                <section>
+                    <h2>Ne perdez pas trop de temps !!!!! </h2>
+                </section>
+            
+            </section>
+
+        
+            <section>
+                <section class="bgi" data-background="./img/ill/planifier-une-web-strategie.png" data-transition="linear" data-background-transition="slide">
+                    <h2><span class="lettrine">L</span>e <span class="lettrine">C</span>lient <span class="lettrine">P</span>lanifie l'<span class="lettrine">I</span>tération</h2>
+                    <p>à la table de planification</p>
+                </section>
+                
+                <section>
+                    <h2>Combien de stories par itération ?</h2>
+                    <p>Déterminer un nombre de <span class="hlt">points de référence</span></p>
+                </section>
+
+                <section>
+                    <h2>Choisissez les stories pour le plan</h2>
+                    <p>Le nombre total de points doit être égal au nombre de points de référence</p>
+                </section>
+                
+                <section>
+                    <h2><span class="hlt">Priorisez</span> les stories...</h2>
+                </section>
+                
+                <section>
+                    <h2>... pour <span class="hlt">maximizer</span> la valeur métier potentielle</h2>
+                </section>
+            
+            </section>
+
+        
+            <section>
+                
+                <section class="bgi" data-background="./img/ill/blueprint.jpg" data-transition="linear" data-background-transition="slide">
+                    <h2><span class="lettrine">L</span>es <span class="lettrine">D</span>éveloppeurs <span class="lettrine">I</span>mplémentent</h2>
+                    <p>à la table de jeu</p>
+                </section>
+                
+                <section>
+                    <h2>Choississez un <span class="hlt">maître du temps</span></h2>
+                </section>
+                
+                <section>
+                    <h2>Pour chaque story</h2>
+                    <ul>
+                        <li>Le maître du temps retourne le sablier</li>
+                        <li>L'équipe implémente la story</li>
+                        <li>Le maître du temps arrête le sablier</li>
+                        <li>Le coach vérifie l'implémentation</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2>Récapitulez l'avancée à mi-itération</h2>
+                    <p>... et revoir le plan ?</p>
+                </section>
+                
+                <section>
+                    <p>Si une story se déroule mal, vous pouvez l'abandonner ...</p>
+                    <h2>si votre client est d'accord</h2>
+                </section>
+            
+            </section>
+            
+            <section>
+                <h2 class="slack"><span class="hlt">A</span>ssez parler !</h2>
+            </section>
+            
+            <section data-transition="zoom">
+                <h2>C'est à <span class="hlt">Vous</span></h2>
+            </section>
+
+            <section data-transition="zoom">
+                <h2><span class="hlt">40</span> minutes pour</h2>
+            </section>
+            
+            <section data-transition="zoom">
+                <h2><span class="hlt">E</span>stimer</h2>
+            </section>
+            
+            <section data-transition="zoom">
+                <h2><span class="hlt">P</span>lanifier</h2>
+            </section>
+            
+            <section data-transition="zoom">
+                <h2><span class="hlt">I</span>mplémenter</h2>
+            </section>
+            
+            <section data-background="#000" data-transition="zoom">
+                <img src="./img/oTNmY.gif" alt="Like a Boss" width="800">
+                <a href="ReleaseTimer_FR.html" target="_blank">Démarrage du minuteur d&apos;itération</a>
+            </section>
+
+            
+            <section>
+                <section class="bgi" data-background="./img/ill/collaborate.jpg" data-transition="linear" data-background-transition="slide">
+                    <h2><span class="lettrine">Q</span>u'avons-nous <span class="lettrine">A</span>ppris ?</h2>
+                </section>
+                
+                <section>
+                    <h2>Estimation contre réalité</h2>
+                </section>
+
+                <section>
+                    <h2><span class="hlt">Vélocité</span></h2>
+                    <p>points d'efforts par itération</p>
+                </section>
+                
+                <section>
+                    <h2>Prochaine itération</h2>
+                    <p>Choisissez des stories jusqu'à concurrence des points de <span class="hlt">Vélocité</span></p>
+                </section>
+            
+            </section>
+
+            
+            <section>
+                <section class="bgi" data-background="./img/ill/share.jpg" data-transition="linear" data-background-transition="slide">
+                    <h2><span class="lettrine">D</span>euxième <span class="lettrine">i</span>tération</h2>
+                </section>
+                
+                <section>
+                    <h2>On recommence</h2>
+                    <p>Planning game + Implémentation</p>
+                    <br>
+                    <p>Mais nous connaissons notre <span class="hlt">Vélocité</span></p>
+                </section>
+                
+                <section>
+                    <p>Les clients choisissent les stories pour un effort total égale à la <span class="hlt">Vélocité</span></p>
+                </section>
+                
+                <section>
+                    <h2><span class="hlt">Estimez de manière cohérente</span></h2>
+                    <p>Assignez des points en comparant avec des stories implémentées </p>
+                </section>
+                
+                <section>
+                    <h2>Les stories peuvent être ré-estimées</h2>
+                </section>
+                
+                <section>
+                    <h2>Faites un bon plan</h2>
+                    <ul>
+                        <li>story réalisée non planifiée : 1/2 valeur métier comptabilisée</li>
+                        <li>story planifiée non terminée : <span class="hlt">pénalité</span> 1/2 de la valeur métier</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <a href="ReleaseTimer2_FR.html" target="_blank">Démarrage du minuteur d'itération</a>
+                </section>
+            
+            </section>
+
+            
+            <section>
+                
+                <section class="bgi" data-background="./img/ill/chimp.jpg" data-transition="linear" data-background-transition="slide">
+                    <h2><span class="lettrine">C</span>onclusion</h2>
+                </section>
+                
+                <section>
+                    <h2><span class="hlt">Rôles</span> et <span class="hlt">Responsibilité</span></h2>
+                    <ul>
+                        <li>Clients</li>
+                        <li>Développeurs</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2><span class="hlt">Estimer</span></h2>
+                    <ul>
+                        <li>Précision</li>
+                        <li>Cohérence</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2><span class="hlt">Itérations</span></h2>
+                    <ul>
+                        <li>Mesurer la vélocité => meilleures estimations</li>
+                        <li>Livrer de la Valeur Métier</li>
+                    </ul>
+                </section>
+            
+            </section>
+        
+        
+            <section data-transition="zoom">
+                <h2 class="slack"><span class="hlt">merci</span></h2>
+            </section>
+        
+        </div>
+    </div>
+    
+    <script src="./lib/js/head.min.js"></script>
+    <script src="./js/reveal.min.js"></script>
+    <script>
+        Reveal.initialize({
+            history: true,
+            theme: 'default',
+            transition: 'concave',
+            backgroundTransition: 'default',
+        });
+    </script>
+
+</body>
+</html>
